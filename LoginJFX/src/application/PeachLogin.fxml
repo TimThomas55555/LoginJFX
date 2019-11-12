@@ -70,12 +70,12 @@
                               <Insets />
                            </opaqueInsets>
                            <VBox.margin>
-                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                              <Insets left="10.0" right="10.0" top="5.0" />
                            </VBox.margin>
                         </JFXTextField>
                         <JFXPasswordField focusColor="#ffa932" labelFloat="true" promptText="Password" unFocusColor="#004a2a">
                            <VBox.margin>
-                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                              <Insets bottom="10.0" left="10.0" right="10.0" />
                            </VBox.margin>
                            <font>
                               <Font size="14.0" />
