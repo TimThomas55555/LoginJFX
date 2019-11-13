@@ -38,17 +38,17 @@
                <children>
                   <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="240.0" spacing="20.0" style="-fx-background-color: white; -fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <children>
-                        <ImageView fitHeight="91.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="91.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@peach.png" />
+                              <Image url="@logo.png" />
                            </image>
                            <VBox.margin>
-                              <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
                            </VBox.margin>
                         </ImageView>
-                        <Label alignment="CENTER" contentDisplay="CENTER" text="Sign in" textFill="#35bf07">
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="Sign in" textFill="#403209">
                            <font>
-                              <Font name="Microsoft JhengHei UI Light" size="28.0" />
+                              <Font name="Lobster Regular" size="28.0" />
                            </font>
                            <VBox.margin>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -81,7 +81,7 @@
                               <Font size="14.0" />
                            </font>
                         </JFXPasswordField>
-                        <JFXButton alignment="CENTER" buttonType="RAISED" prefHeight="26.0" prefWidth="900.0" style="-fx-background-color: green; -fx-background-radius: 10;" text="Get started" textFill="WHITE">
+                        <JFXButton alignment="CENTER" buttonType="RAISED" prefHeight="26.0" prefWidth="900.0" style="-fx-background-color: #f2b90f; -fx-background-radius: 10;" text="Get started" textFill="WHITE">
                            <VBox.margin>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </VBox.margin>

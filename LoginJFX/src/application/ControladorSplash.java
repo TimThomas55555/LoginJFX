@@ -56,7 +56,7 @@ public class ControladorSplash {
 	public void initialize() {
 		
 		TranslateTransition translateTransition = new TranslateTransition(Duration.seconds(0.1), logoLabel);
-		translateTransition.setByY(700);
+		translateTransition.setByX(900);
 		translateTransition.play();
 
 		TranslateTransition translateTransition0 = new TranslateTransition(Duration.seconds(0.1), nameLabel);
@@ -70,7 +70,7 @@ public class ControladorSplash {
 		translateTransition.setOnFinished(event -> {
 
 			TranslateTransition translateTransition1 = new TranslateTransition(Duration.seconds(0.5), logoLabel);
-			translateTransition1.setByY(-700);
+			translateTransition1.setByX(-900);
 			translateTransition1.play();
 
 //			translateTransition1.setOnFinished(event1 -> {
@@ -99,14 +99,14 @@ public class ControladorSplash {
 					translateTransition111.setOnFinished(event3 -> {
 						spinnerPane.setVisible(true);
 
-						FadeTransition fadeTransition = new FadeTransition(Duration.seconds(2), spinnerPane);
+						FadeTransition fadeTransition = new FadeTransition(Duration.seconds(1), spinnerPane);
 						fadeTransition.setFromValue(0);
 						fadeTransition.setToValue(1);
 						fadeTransition.play();
 
 						fadeTransition.setOnFinished(event4 -> {
 
-							FadeTransition fadeTransition1 = new FadeTransition(Duration.seconds(2), rootPane);
+							FadeTransition fadeTransition1 = new FadeTransition(Duration.seconds(0.5), rootPane);
 							fadeTransition1.setFromValue(1);
 							fadeTransition1.setToValue(0.1);
 							fadeTransition1.play();

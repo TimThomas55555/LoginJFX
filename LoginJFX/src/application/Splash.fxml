@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #E5FFE8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControladorSplash">
+<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #FFF9E5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControladorSplash">
    <children>
       <GridPane AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
@@ -27,13 +27,13 @@
                <children>
                   <ImageView fx:id="logoLabel" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@peach.png" />
+                        <Image url="@logo.png" />
                      </image>
                      <VBox.margin>
                         <Insets bottom="30.0" top="70.0" />
                      </VBox.margin>
                   </ImageView>
-                  <Label fx:id="nameLabel" text="YUMMY PEACH" textAlignment="CENTER" textFill="#35bf07">
+                  <Label fx:id="nameLabel" text="CAR TRACK" textAlignment="CENTER" textFill="#403209">
                      <font>
                         <Font name="Lobster Regular" size="36.0" />
                      </font>
