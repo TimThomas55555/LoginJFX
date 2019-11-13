@@ -1,12 +1,8 @@
-#pane1{
-	-fx-background-image:url('/1.jpg') 
+.boton 
+:hover {
+	-fx-background-color: #ff895e;
 }
-#pane2{
-	-fx-background-image:url('/2.jpg') 
-}
-#pane3{
-	-fx-background-image:url('/3.jpg') 
-}
-#pane4{
-	-fx-background-image:url('/4.jpg') 
+
+.boton  {
+	-fx-background-color: #ff0000;
 }

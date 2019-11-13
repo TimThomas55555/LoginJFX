@@ -23,20 +23,20 @@ public class Main extends Application {
 
 		stage = myStage;
 
-		//VentanaPrincipal();
+		// VentanaPrincipal();
 		homepage();
 
 	}
 
 	public void homepage() {
-		
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("Homepage.fxml"));
-		AnchorPane pane;
-		
+
 		try {
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("Homepage.fxml"));
+			AnchorPane pane;
 			pane = loader.load();
 			Scene scene = new Scene(pane);
-			stage.setTitle("Home page");
+			//scene.getStylesheets().addAll(getClass().getResource("application.css").toExternalForm());			
+			stage.setTitle("Homepage.fxml");
 			stage.setScene(scene);
 			stage.setMinHeight(700);
 			stage.setMinWidth(700);

@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="680.0" prefWidth="1024.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controlador_homapage">
+<AnchorPane prefHeight="680.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controlador_homapage">
    <children>
       <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
@@ -28,7 +28,7 @@
                         </ImageView>
                      </children>
                   </AnchorPane>
-                  <AnchorPane prefHeight="200.0">
+                  <AnchorPane prefHeight="250.0">
                      <children>
                         <Pane fx:id="pane1" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                         <Pane fx:id="pane2" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
@@ -52,19 +52,19 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <JFXButton alignment="CENTER" contentDisplay="CENTER" prefHeight="174.0" prefWidth="289.0" style="-fx-background-color: #f2e399;" textAlignment="CENTER" />
-                  <JFXButton alignment="CENTER" contentDisplay="CENTER" prefHeight="174.0" prefWidth="289.0" style="-fx-background-color: #403209;" GridPane.rowIndex="1">
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" prefHeight="174.0" prefWidth="289.0" style="-fx-background-color: #403209;" styleClass="boton" text="FORD" />
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" prefHeight="174.0" prefWidth="289.0" style="-fx-background-color: #403209;" styleClass="boton" text="AUDI" textFill="WHITE" GridPane.rowIndex="1">
                      <GridPane.margin>
                         <Insets />
                      </GridPane.margin>
                   </JFXButton>
-                  <JFXButton prefHeight="174.0" prefWidth="289.0" style="-fx-background-color: f2b90f;" GridPane.rowIndex="2" />
-                  <JFXButton prefHeight="174.0" prefWidth="289.0" style="-fx-background-color: f2b90f;" GridPane.columnIndex="1" />
-                  <JFXButton prefHeight="174.0" prefWidth="289.0" style="-fx-background-color: f2e399;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <JFXButton prefHeight="174.0" prefWidth="289.0" style="-fx-background-color: #403209;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <JFXButton prefHeight="174.0" prefWidth="289.0" style="-fx-background-color: #403209;" GridPane.columnIndex="2" />
-                  <JFXButton prefHeight="174.0" prefWidth="289.0" style="-fx-background-color: f2b90f;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                  <JFXButton prefHeight="174.0" prefWidth="289.0" style="-fx-background-color: f2e399;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" prefHeight="174.0" prefWidth="289.0" style="-fx-background-color: f2b90f;" styleClass="boton" text="FERRARI" GridPane.rowIndex="2" />
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" prefHeight="174.0" prefWidth="289.0" style="-fx-background-color: f2b90f;" styleClass="boton" text="Mclaren" GridPane.columnIndex="1" />
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" prefHeight="174.0" prefWidth="289.0" style="-fx-background-color: f2e399;" styleClass="boton" text="RENAULT" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" prefHeight="174.0" prefWidth="289.0" style="-fx-background-color: #403209;" styleClass="boton" text="CITROEN" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" prefHeight="174.0" prefWidth="289.0" style="-fx-background-color: #403209;" styleClass="boton" text="TOYOTA" textFill="WHITE" GridPane.columnIndex="2" />
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" prefHeight="174.0" prefWidth="289.0" style="-fx-background-color: f2b90f;" styleClass="boton" text="SUZUKI" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" prefHeight="174.0" prefWidth="289.0" style="-fx-background-color: f2e399;" styleClass="boton" text="YAMASAKI" GridPane.columnIndex="2" GridPane.rowIndex="2" />
                </children>
                <BorderPane.margin>
                   <Insets left="300.0" right="300.0" />
@@ -72,42 +72,42 @@
             </GridPane>
          </center>
       </BorderPane>
-      <AnchorPane fx:id="opacityPane" layoutX="47.0" layoutY="340.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane fx:id="opacityPane" layoutX="47.0" layoutY="340.0" style="-fx-background-color: #000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <AnchorPane fx:id="drawerPane" layoutX="-1.0" layoutY="52.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <VBox style="-fx-background-color: #f2e399;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <JFXButton prefHeight="181.0" prefWidth="326.0">
+                  <JFXButton prefHeight="181.0" prefWidth="326.0" styleClass="boton" text="Informacion Personal">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton prefHeight="181.0" prefWidth="326.0">
+                  <JFXButton prefHeight="181.0" prefWidth="326.0" style="-fx-border-color: #403209;" styleClass="boton" text="Recambios">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton prefHeight="181.0" prefWidth="326.0">
+                  <JFXButton prefHeight="181.0" prefWidth="326.0" style="-fx-border-color: #403209;" styleClass="boton" text="Pedir cita">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton prefHeight="181.0" prefWidth="326.0">
+                  <JFXButton prefHeight="181.0" prefWidth="326.0" style="-fx-border-color: #403209;" styleClass="boton" text="Datos Seguro">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton prefHeight="181.0" prefWidth="326.0">
+                  <JFXButton prefHeight="181.0" prefWidth="326.0" style="-fx-border-color: #403209;" styleClass="boton" text="Informes">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton prefHeight="181.0" prefWidth="326.0">
+                  <JFXButton prefHeight="181.0" prefWidth="326.0" style="-fx-border-color: #403209;" styleClass="boton" text="Contacto">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton prefHeight="181.0" prefWidth="326.0">
+                  <JFXButton prefHeight="181.0" prefWidth="326.0" style="-fx-border-color: #403209;" styleClass="boton" text="Ayuda en caretera">
                      <font>
                         <Font size="18.0" />
                      </font>
