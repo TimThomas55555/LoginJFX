@@ -17,7 +17,7 @@ import javafx.stage.StageStyle;
 import javafx.util.Duration;
 
 public class ControladorSplash {
-	
+
 	@FXML
 	ImageView logoLabel;
 
@@ -54,7 +54,7 @@ public class ControladorSplash {
 	}
 
 	public void initialize() {
-		
+
 		TranslateTransition translateTransition = new TranslateTransition(Duration.seconds(0.1), logoLabel);
 		translateTransition.setByX(900);
 		translateTransition.play();
@@ -92,7 +92,8 @@ public class ControladorSplash {
 				translateTransition11.setOnFinished(event2 -> {
 
 					helloLabel.setVisible(true);
-					TranslateTransition translateTransition111 = new TranslateTransition(Duration.seconds(1), helloLabel);
+					TranslateTransition translateTransition111 = new TranslateTransition(Duration.seconds(1),
+							helloLabel);
 					translateTransition111.setByX(-900);
 					translateTransition111.play();
 
