@@ -23,8 +23,8 @@ public class Main extends Application {
 
 		stage = myStage;
 
-		// VentanaPrincipal();
-		homepage();
+		VentanaPrincipal();
+		//homepage();
 
 	}
 
