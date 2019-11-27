@@ -1,7 +1,6 @@
 package application;
 
 import java.io.IOException;
-
 import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -10,7 +9,7 @@ import javafx.stage.StageStyle;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.BorderPane;
+
 
 public class Main extends Application {
 	Stage stage;
@@ -24,6 +23,7 @@ public class Main extends Application {
 		stage = myStage;
 
 		VentanaPrincipal();
+		
 		//homepage();
 
 	}
@@ -36,7 +36,7 @@ public class Main extends Application {
 			pane = loader.load();
 			Scene scene = new Scene(pane);
 			//scene.getStylesheets().addAll(getClass().getResource("application.css").toExternalForm());			
-			stage.setTitle("Homepage.fxml");
+			stage.initStyle(StageStyle.UNDECORATED);
 			stage.setScene(scene);
 			stage.setMinHeight(700);
 			stage.setMinWidth(700);
@@ -74,5 +74,20 @@ public class Main extends Application {
 
 	public static void main(String[] args) {
 		launch(args);
+	}
+	
+	private void wizard(){
+		try {
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("Wizard.fxml"));
+			AnchorPane pane;
+			pane = loader.load();
+			Scene scene = new Scene(pane);
+			//scene.getStylesheets().addAll(getClass().getResource("application.css").toExternalForm());			
+			stage.initStyle(StageStyle.UNDECORATED);
+			stage.setScene(scene);
+			stage.show();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 }

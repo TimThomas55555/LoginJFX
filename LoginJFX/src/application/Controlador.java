@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javafx.util.Duration;
 
 public class Controlador {
@@ -50,6 +51,7 @@ public class Controlador {
             AnchorPane page = (AnchorPane) loader.load();
             Stage sendStage = new Stage();    
             Scene scene = new Scene(page);
+            sendStage.initStyle(StageStyle.UNDECORATED);
             sendStage.setScene(scene);          
             sendStage.show();		
 

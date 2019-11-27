@@ -37,7 +37,7 @@ public class ControladorSplash {
 		try {
 			// Load the fxml file and create a new stage for the popup.
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(Main.class.getResource("PeachLogin.fxml"));
+			loader.setLocation(Main.class.getResource("Wizard.fxml"));
 			AnchorPane page = (AnchorPane) loader.load();
 			Stage homeStage = new Stage();
 			homeStage.setTitle("Main Menu");
@@ -52,6 +52,8 @@ public class ControladorSplash {
 			System.out.println("second stage ko");
 		}
 	}
+	
+	
 
 	public void initialize() {
 
