@@ -105,6 +105,7 @@
             </GridPane>
          </center>
       </BorderPane>
+      <AnchorPane fx:id="opacityPane" layoutX="47.0" layoutY="340.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <AnchorPane fx:id="drawerPane" layoutX="-1.0" layoutY="52.0" prefWidth="180.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <VBox layoutX="-37.0" prefHeight="494.0" prefWidth="217.0" style="-fx-background-color: #f2e399;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
