@@ -43,7 +43,7 @@
       </AnchorPane>
       <AnchorPane fx:id="pane3" layoutX="133.0" layoutY="210.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label layoutX="300.0" layoutY="77.0" text="NOTIFICACIONES">
+            <Label layoutX="295.0" layoutY="77.0" text="NOTIFICACIONES">
                <font>
                   <Font name="Ubuntu Regular" size="24.0" />
                </font></Label>
