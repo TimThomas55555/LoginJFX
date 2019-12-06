@@ -16,7 +16,7 @@ public class Main extends Application {
             AnchorPane mypane=loader.load();
             Scene scene=new Scene(mypane);
             scene.getStylesheets().addAll(Main.class.getResource("application.css").toExternalForm());
-            stage.setTitle("signin");
+        stage.setTitle("¿Quieres un melocotón?");
             stage.setScene(scene);
             stage.show();
 		} catch(Exception e) {
