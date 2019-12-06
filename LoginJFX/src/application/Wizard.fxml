@@ -11,7 +11,7 @@
    <children>
       <AnchorPane fx:id="pane1" layoutX="133.0" layoutY="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label layoutX="330.0" layoutY="77.0" text="PAGINA 1">
+            <Label layoutX="330.0" layoutY="77.0" text="REGISTRO">
                <font>
                   <Font name="Ubuntu Regular" size="24.0" />
                </font></Label>
@@ -27,11 +27,11 @@
       </AnchorPane>
       <AnchorPane fx:id="pane2" layoutX="133.0" layoutY="210.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label layoutX="330.0" layoutY="77.0" text="PAGINA2">
+            <Label layoutX="330.0" layoutY="77.0" text="CONSULTA">
                <font>
                   <Font name="Ubuntu Regular" size="24.0" />
                </font></Label>
-            <Label layoutX="295.0" layoutY="108.0" prefHeight="68.0" prefWidth="179.0" text="222222222222222222222222222222222222222222" textAlignment="CENTER" wrapText="true">
+            <Label layoutX="295.0" layoutY="108.0" prefHeight="68.0" prefWidth="179.0" text="Puede consultar sus reparaciones en su perfil en cualquier instante." textAlignment="CENTER" wrapText="true">
                <font>
                   <Font name="Ubuntu Regular" size="12.0" />
                </font></Label>
@@ -43,11 +43,11 @@
       </AnchorPane>
       <AnchorPane fx:id="pane3" layoutX="133.0" layoutY="210.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label layoutX="330.0" layoutY="77.0" text="PAGINA3">
+            <Label layoutX="300.0" layoutY="77.0" text="NOTIFICACIONES">
                <font>
                   <Font name="Ubuntu Regular" size="24.0" />
                </font></Label>
-            <Label alignment="CENTER" layoutX="295.0" layoutY="108.0" prefHeight="68.0" prefWidth="179.0" text="3333333" textAlignment="CENTER" wrapText="true">
+            <Label alignment="CENTER" layoutX="295.0" layoutY="108.0" prefHeight="68.0" prefWidth="179.0" text="Recibirá notificaciones al instante." textAlignment="CENTER" wrapText="true">
                <font>
                   <Font name="Ubuntu Regular" size="12.0" />
                </font></Label>
