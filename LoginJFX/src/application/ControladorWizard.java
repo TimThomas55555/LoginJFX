@@ -33,9 +33,15 @@ public class ControladorWizard {
 	@FXML
 	AnchorPane rootPane;
 	
+	public void initialize() {//Iniciamos con 3 paneles fuera, y 1 dentro
+		translateAnimation(0.1, pane2, 800);
+		translateAnimation(0.1, pane3, 800);
+		translateAnimation(0.1, pane4, 800);
+	}
+	
 
 
-	public void translateAnimation(double duration, Node node, double byX) {
+	public void translateAnimation(double duration, Node node, double byX) {//Hace una funcion pasandole parametros, para sacar los paneles iniciales(hay 4).Lo unico que hace es tener las 3 imagenes fuera
 
 		TranslateTransition translateTransition = new TranslateTransition(Duration.seconds(duration), node);
 		translateTransition.setByX(byX);
@@ -43,16 +49,12 @@ public class ControladorWizard {
 
 	}
 
-	public void initialize() {
-		translateAnimation(0.1, pane2, 800);
-		translateAnimation(0.1, pane3, 800);
-		translateAnimation(0.1, pane4, 800);
-	}
 
-	int showSlide = 0;
+
+	int showSlide = 0;//Me defino una variable int, para controlar que pase de una pagina a otra. Tengo dos botones, uno hacia delante y otro hacia atras
 
 	@FXML
-	void nextAction() {
+	void nextAction() {//Este es el boton que avanza
 
 		if (showSlide == 0) {
 			translateAnimation(0.5, pane2, -800);
@@ -77,7 +79,7 @@ public class ControladorWizard {
 	}
 
 	@FXML
-	void backAction() {
+	void backAction() {//Este es el boton que retrocede
 
 		if (showSlide == 0) {
 			System.out.println("No more slides");
@@ -97,11 +99,11 @@ public class ControladorWizard {
 
 	}
 	
-	public void showLogin() {
+	@FXML
+	public void showLogin() {//Show login es un boton que su id es showLogin
 		
 		try {
-			cerrarVentana();
-			// Load the fxml file and create a new stage for the popup.
+			cerrarVentana();//Lo primero que hace es cerrar ventana
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Main.class.getResource("peachLogin.fxml"));
 			AnchorPane page = (AnchorPane) loader.load();

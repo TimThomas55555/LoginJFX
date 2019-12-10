@@ -18,41 +18,19 @@ import javafx.scene.layout.AnchorPane;
  * @see Controlador_homapage
  */
 public class Main extends Application {
-	Stage stage;
+	Stage stage;//Siempre carga la primera pagina que deseo mostrar, para ello me defino en stage para poder abrirla
 
-	@FXML
-	Label logoLabel;
 
 	@Override
-	public void start(Stage myStage) throws Exception {
+	public void start(Stage myStage) throws Exception {//esto es lo primero que me va a cargar, parecido a innitialize
 
-		stage = myStage;
+		stage = myStage;//Me creo un nuevo stage
 
 		VentanaPrincipal();
-		
-		//homepage();
+
 
 	}
-
-	public void homepage() {
-
-		try {
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("Homepage.fxml"));
-			AnchorPane pane;
-			pane = loader.load();
-			Scene scene = new Scene(pane);
-			//scene.getStylesheets().addAll(getClass().getResource("application.css").toExternalForm());			
-			stage.initStyle(StageStyle.UNDECORATED);
-			stage.setScene(scene);
-			stage.setMinHeight(700);
-			stage.setMinWidth(700);
-			stage.show();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-	}
-
+	
 	private void VentanaPrincipal() {
 
 		try {
@@ -74,26 +52,14 @@ public class Main extends Application {
 
 	}
 
-	public void closeStage() {
+
+	public void closeStage() {//Cierra el stage
 		stage.close();
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {//Hola que ase???
 		launch(args);
 	}
 	
-	private void wizard(){
-		try {
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("Wizard.fxml"));
-			AnchorPane pane;
-			pane = loader.load();
-			Scene scene = new Scene(pane);
-			//scene.getStylesheets().addAll(getClass().getResource("application.css").toExternalForm());			
-			stage.initStyle(StageStyle.UNDECORATED);
-			stage.setScene(scene);
-			stage.show();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+
 }

@@ -11,44 +11,44 @@ import javafx.util.Duration;
 public class Controlador_homapage {
 
 	@FXML
-	private AnchorPane opacityPane, drawerPane;
+	private AnchorPane opacityPane, drawerPane;//drawerPane es el id que le doy al menu lateral que se despliega y el opacityPane es el que hace que cuando el menu sale, se oscureca lo demas.
 
 	@FXML
 	private Pane pane1, pane2, pane3, pane4;
 
 	@FXML
-	private ImageView drawerImage;
+	private ImageView drawerImage;//Es la imagen para abrir el menu
 
-	public void initialize() {
+	public void initialize() {//Esto es lo primero que hago
 
-		opacityPane.setVisible(false);
+		opacityPane.setVisible(false);//Pongo en falso el opacityPane para que no sea visible
 
-		TranslateTransition translateTransition = new TranslateTransition(Duration.seconds(0.1), drawerPane);
+		TranslateTransition translateTransition = new TranslateTransition(Duration.seconds(0.1), drawerPane);//Esto saca el menu lateral fuera
 		translateTransition.setByX(-200);
 		translateTransition.play();
 
-		pane1.setStyle("-fx-background-image: url('application/5.jpg')");
+		pane1.setStyle("-fx-background-image: url('application/5.jpg')");//Cargamos las imagenes del carrusel con sus panes
 		pane2.setStyle("-fx-background-image: url('application/6.jpg')");
 		pane3.setStyle("-fx-background-image: url('application/7.jpg')");
 		pane4.setStyle("-fx-background-image: url('application/8.jpg')");
 
-		Animation();
+		Animation();//Animation esta abajo y es esactamente lo mismo que el carrusel de login
 
-		drawerImage.setOnMouseClicked(event -> {
+		drawerImage.setOnMouseClicked(event -> {//Cuando clicko en la imagen del menu, comienzo un evento
 
-			opacityPane.setVisible(true);
+			opacityPane.setVisible(true);//Lo primero es que hago visible el opacityPane
 
-			FadeTransition fadeTransition1 = new FadeTransition(Duration.seconds(0.5), opacityPane);
+			FadeTransition fadeTransition1 = new FadeTransition(Duration.seconds(0.5), opacityPane);//Hago visible el opacityPane para que quede mas oscuro
 			fadeTransition1.setFromValue(0);
 			fadeTransition1.setToValue(0.3);
 			fadeTransition1.play();
 
-			TranslateTransition translateTransition1 = new TranslateTransition(Duration.seconds(0.5), drawerPane);
+			TranslateTransition translateTransition1 = new TranslateTransition(Duration.seconds(0.5), drawerPane);//Y saco el menu lateral(200)
 			translateTransition1.setByX(200);
 			translateTransition1.play();
 		});
 
-		opacityPane.setOnMouseClicked(event -> {
+		opacityPane.setOnMouseClicked(event -> {//Esto sirve para que clickando fuera del menu, se me cierre el menu y el opacityPane se le quite la opacidad
 
 			FadeTransition fadeTransition1 = new FadeTransition(Duration.seconds(0.5), opacityPane);
 			fadeTransition1.setFromValue(0.3);
@@ -57,12 +57,12 @@ public class Controlador_homapage {
 
 			fadeTransition1.setOnFinished(event1 -> {
 				opacityPane.setVisible(false);
-			});
+			});//Aqui cierro el evento1
 
 			TranslateTransition translateTransition1 = new TranslateTransition(Duration.seconds(0.5), drawerPane);
 			translateTransition1.setByX(-200);
 			translateTransition1.play();
-		});
+		});//Aqui cierro el event
 
 	}
 
